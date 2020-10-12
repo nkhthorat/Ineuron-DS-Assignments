@@ -1,0 +1,20 @@
+#Question:1
+l=[]
+for i in range(2000,3201):
+    if i%7==0 and i%5:
+        l.append(i)
+print(*l,sep=',')
+    
+
+#Question:2
+
+f_name=input("Enter your First Name")
+l_name=input("Enter your Last Name")
+print(l_name[::-1]+" "+f_name[::-1])
+
+#Question:3
+pie=3.14
+diameter=12
+rad=diameter/2
+V=4/3*pie*rad**3
+print(V)
