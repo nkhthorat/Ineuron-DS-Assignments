@@ -1,0 +1,70 @@
+#Question 1.1
+try:
+    class parentArea():
+        def takeMeasurements(self):
+            a=int(input("Enter side1 :"))
+            b=int(input("Enter side2 :"))
+            c=int(input("Enter base :"))
+        
+            self.a=a
+            self.b=b
+            self.c=c
+        
+    class Area():
+        def calArea(self,k):
+            s=(k.a+k.b+k.c)/2
+            area=(s*(s-k.a)*(s-k.b)*(s-k.c))**0.5
+            return area
+    obj1=parentArea()
+    obj2=Area()
+    obj1.takeMeasurements()
+    print("The area of you triangle is",obj2.calArea(obj1))
+except Exception as e:
+    print(e)
+    
+    
+    
+    
+    
+#Question 1.2
+class filter():
+    #def __init__(self,listt):
+       # self.listt=listt
+        
+        
+    def filter_long_words(self,listt,n):
+        li=[i for i in listt if len(i)>n]
+        return li
+    
+        
+listt=["abc","abcd","abcde","abcdefg"]
+new_li=[]
+class okk():
+    obj=filter()
+    new_li=obj.filter_long_words(listt,4)
+    
+    print(new_li)
+
+
+#Question 2.1
+names=["a","aaa","aaa","aaaa"]
+
+def calLength(listt):
+    
+    final=[len(name) for name in listt]
+    return final
+lengthh=calLength(names)
+print(lengthh)
+
+#Question 2.2
+
+char=input("enter a character")
+vovels=['a','e','i','o','u']
+def ifchar(char):
+    for i in vovels:
+        if char==i:
+            return True
+            break
+    return False
+
+print (ifchar(char))
